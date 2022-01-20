@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 9em;
+  margin-top: 0.5em;
+}
+
+.hrLogo {
+  width: 100vw;
+  margin-top: 1em;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+}
+
+.txt-sessao {
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 1.5em;
+  font-weight: 900;
+}
+
+.btnFacebook {
+  margin-top: 0.5em;
+  width: 80vw;
+  height: 5vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(59, 89, 152);
+  color: rgb(248, 248, 248);
+  box-sizing: border-box;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  border-radius: 500px;
+  border: 1px solid var(--essential-subdued, #878787);
+}
+
+.btnApple {
+  margin-top: 0.5em;
+  width: 80vw;
+  height: 5vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(248, 248, 248);
+  box-sizing: border-box;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  border-radius: 500px;
+  border: 1px solid var(--essential-subdued, #878787);
+}
+
+.btnMail {
+  margin-top: 0.5em;
+  width: 80vw;
+  height: 5vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  border-radius: 500px;
+  border: 1px solid var(--essential-subdued, #878787);
+}
+
+.facebookLogo {
+  display: none;
+}
+
+.facebookTxt {
+  font-family: "spotify-circular, Helvetica, Arial, sans-serif;";
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  margin-left: 1em;
+}
+
+.appleTxt {
+  font-family: "spotify-circular, Helvetica, Arial, sans-serif;";
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  margin-left: 1em;
+}
+
+.mailTxt {
+  font-family: "spotify-circular, Helvetica, Arial, sans-serif;";
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  margin-left: 1em;
+}
+
+.hrdiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.hrinputs {
+  border: 21;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+  width: 40vw;
+  align-self: center;
+}
