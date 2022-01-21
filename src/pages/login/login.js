@@ -49,9 +49,73 @@ export default class LoginPage extends Component {
             <span className="hrSpan">ou</span>
             <hr className="hrinputs" />
           </div>
-          <form>
-            <div></div>
+          <form className="form-group">
+            <div className="email-group">
+              <label className="email-span">
+                Endereço de e-mail ou nome de utilizador
+              </label>
+              <input
+                className="email-input"
+                id="email"
+                type="text"
+                placeholder="Introduza o e-mail ou nome do utilizador"
+                data-qa-label="emailInput"
+              />
+            </div>
+            <div className="password-group">
+              <label className="password-span">Palavra-passe</label>
+              <input
+                className="password-input"
+                id="password"
+                type="password"
+                placeholder="Palavra-passe"
+                data-qa-label="passwordInput"
+              />
+            </div>
+            <a
+              className="resetPassword"
+              href="#test"
+              id="reset-password-link"
+              data-qa-label="resetPasswordLink"
+            >
+              Esqueceste-te da tua palavra-passe?
+            </a>
+            <div className="submitForm">
+              <div className="memorize">
+                <input
+                  type="checkbox"
+                  className="loginRemember"
+                  id="login-remember"
+                  data-qa-label="login-remember"
+                  name="remember"
+                />
+                <label for="login-remember">
+                  <span className="indicadorRemember"></span>
+                  <span className="rememberSpan">Memorizar-me</span>
+                </label>
+              </div>
+              <div className="contentBtnSubmit">
+                <button
+                  className="btnSubmit"
+                  id="login-submit"
+                  data-qa-label="login-submit"
+                >
+                  Iniciar Sessão
+                </button>
+              </div>
+            </div>
           </form>
+          <hr className="hrSeparatorForm" />
+          <div className="Signup-section">
+            <p className="sigupTXT">Não tens conta</p>
+            <button
+              className="signupBtn"
+              id="signup-btn"
+              data-qa-label="signup-btn"
+            >
+              <p className="signupBtntext">Regista-te no Spotify</p>
+            </button>
+          </div>
         </body>
       </screen>
     );
